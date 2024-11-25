@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .center {
+            position: relative;
+
+        }
+
+        .card {
+            position: absolute;
+            transform: translate(-50%, 10%);
+            left: 50%;
+            top: 50%;
+            border: 0.5px solid black ;
+            
+            width: 300px;
+            height: 450px;
+            border-radius: 25px;
+            box-shadow: 2px -2px 0.9px rgb(165, 164, 164);
+            backdrop-filter: blur(10px); /* Apply blur to the background */
+    -webkit-backdrop-filter: blur(10px); /
+
+        }
+
+        img {
+            position: absolute;
+            width: 200px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, 1%);
+
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            top: 40%;
+
+        }
+
+        p {
+            font-size: 12px;
+            padding: 3px 1px 3px 1px;
+            text-align: center;
+            margin: 5px;
+
+        }
+        button{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(227, 205, 12);
+            border-color: none;
+            border-radius: 20px;
+            border: 0.5px solid black;
+        }
+        button:hover{
+            color:rgb(173, 158, 20);
+            background-color: transparent;
+
+        }
+        .para1{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="card">
+
+            <img src="WMNS+AIR+JORDAN+1+MID-removebg.png" alt=""><br><br>
+            <div class="text">
+                <h2 class="para1">Price: $ 200</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dolores fugit fugiat veritatis
+                    dolorum ab quasi minima placeat cum praesentium, ipsa dolore necessitatibus id, enim, laudantium
+                    doloremque nisi adipisci sapiente.</p>
+                <br>
+                <button><b>Buy Now</b></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
